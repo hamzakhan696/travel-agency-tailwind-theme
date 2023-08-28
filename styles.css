@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+/* navbar */
+.sidebarMenu{
+    height: 90%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 480px;
+    margin-top: 0px;
+    background-color: #fff;
+    transform: translateX(-480px);
+    transition: transform 250ms ease-in-out;
+    z-index: 999;
+    box-shadow: 0px 20px 50px rgba(70, 129, 255, 0.1);
+  }
+  #openSidebarMenu:checked ~ .sidebarMenu{
+    transform: translateX(0px);
+  }
+  .spinner.middle,.spinner.bottom{
+    margin-top: 3px;
+  }
+  .sidebarIconToggle{  
+    width: 29px;
+    height: 22px;
+    position: fixed;
+    z-index: 99999;
+    top: 34px;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-left: 3px;
+  }
+  .spinner{
+    height: 2px;
+    background: #333;
+    transition: all 0.3s; 
+  }
+  #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle{
+    opacity: 0;
+  }
+  #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top{
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+  #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom{
+    transform: rotate(-135deg);
+    margin-top: -9px
+  }
+  .navbar-heading{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .menu li{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .header-btn{
+    background: transparent;
+    border: 1px solid #f8b600;
+  }
+  .header-btn button{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222222;
+  }
+  .header-btn:hover{
+    background-color: #f8b600;
+  }
