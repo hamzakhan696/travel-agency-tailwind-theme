@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond Travel Agency</title>
     <link href="https://cdn.tailwindcss.com/2.2.15/tailwind.min.css" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
 </head>
 <body >
-    <div class="container mx-auto flex justify-between">
+    <!-- navbar -->
+    <div class="container mx-auto px-12 flex justify-between">
         <nav>
             <input type="checkbox" hidden id="openSidebarMenu">
        
             <label for="openSidebarMenu" class="sidebarIconToggle">
-              <div class="spinner top mb-1"></div>
-              <div class="spinner middle mb-1"></div>
+              <div class="spinner top mb-2"></div>
+              <div class="spinner middle short mb-2"></div>
               <div class="spinner bottom"></div>
             </label>
             
-            <div class="sidebarMenu pt-32 pl-32">
+            <div class="sidebarMenu pt-16 sm:pt-32 pl-12 sm:pl-32">
               <ul class="menu ml-3">
                 <h1 class="navbar-heading">Beyond</h1>
-                <li class="mt-12 hover:text-blue-500"><a href="#">Home</a></li>
+                <li class="mt-8 sm:mt-12 hover:text-blue-500"><a href="#">Home</a></li>
                 <li class="mt-3 hover:text-blue-500"><a href="#pakages">Pakages</a></li>
                 <li class="mt-3 hover:text-blue-500"><a href="#pages">Pages</a></li>
                 <li class="mt-3 hover:text-blue-500"><a href="#blog">Blog</a></li>
@@ -32,12 +39,265 @@
               </ul>
             </div>
         </nav>
-        <div class="header-btn mt-4">
-            <button class="text-black font-bold py-3 px-4">
-                Book a table
-              </button>
+        <div class="header-btn mt-6 md:mt-4 relative">
+            <button class="text-black font-bold py-3 px-3 ">Book a table
+             <i class="fa fa-long-arrow-right fa-2x absolute top-2 " aria-hidden="true"></i>
+             </button>
         </div>
       
    </div>
+   <!-- header -->
+
+   <div class="header">
+    <div class="container mx-auto sm:px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="header-content">
+                <h1 class="main-heading pt-20 md:pt-32">Santorini Island in Greece </h1>
+                <p class="py-6 sm:pr-12">
+                    If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may
+                    see some for as low as $.17 each.
+                </p>
+                <div class="header-btn mt-4 pb-24 md:pb-0">
+                    <button class="text-black font-bold py-3 px-4 w-auto !important" >get started
+                        <span><i class="fa fa-long-arrow-right fa-2x absolute top-2" aria-hidden="true"></i></span>
+                      </button>
+                </div>
+            </div>
+            <div class="header-image mt-5 relative hidden md:block">
+                <img src="images/banner-img.jpg" alt="banner">
+                <div class="image-text absolute  text-white">
+                    <h6>Watch intro video</h6>
+                    <p>you will love our execution</p>
+                </div>
+                <div class="video-play absolute top-80 text-white">
+                    <a href="https://www.youtube.com/watch?v=KUln2DXU5VE" class="hidden" data-lightbox="video-popup">
+                        <img src="https://www.youtube.com/watch?v=KUln2DXU5VE" alt="Video Thumbnail">
+                      </a>
+                    <span><i class="fa fa-play" aria-hidden="true"></i></span>
+                </div>
+            </div>
+          
+    </div>
+   </div>
+   </div>
+   <!-- section-1 -->
+   <div class="popular-place-area-section my-10">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 ">
+        <div class="left-content pl-20 hidden lg:block">
+          <img class="img1" src="images/island.jpg" alt="island">
+          <img class="img2" src="images/boy-image.jpg" alt="boy">
+          <img class="img3" src="images/img3.jpg" alt="img3">
+        </div>
+        <div class="right-content">
+          <div class="main-title px-0 sm:px-20 ">
+            <h1>Popular<br> Places Around<br>The World</h1>
+              <p class="pr-2 md:pr-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="counter-area  pl-0 md:pl-20 pt-10 ">
+            <div class="grid grid-cols-2">
+            <div class="box-1 w-36 md:w-40 mt-5">
+              <div class="icons mb-2">
+                <i class="fa fa-clock" aria-hidden="true"></i>
+              </div>
+              <h4>London</h4>
+              <p>135 Places</p>
+            </div>
+            <div class="box-2 w-36 md:w-40 mt-5 ">
+              <div class="icons mb-2">
+                <i class="fa fa-car" aria-hidden="true"></i>
+              </div>
+              <h4>Turkey</h4>
+              <p>135 Places</p>
+            </div>
+            <div class="box-3 w-36 md:w-40 mt-8">
+              <div class="icons mb-2">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+              </div>
+              <h4>Paris</h4>
+              <p>135 Places</p>
+            </div>
+            <div class="box-4 w-36 md:w-40 mt-8">
+              <div class="icons mb-2">
+                <i class="fa fa-map " aria-hidden="true"></i>
+              </div>
+              <h4>Thailand</h4>
+              <p>135 Places</p>
+            </div>
+            </div>
+          </div>
+        </div>
+       
+
+      </div>
+    </div>
+   </div>
+   <!-- section-2 -->
+   <div class="tour-plan-section mt-12 lg:mt-48">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="left-content">
+          <div class="main-title px-4 md:px-20 ">
+            <h1>Best <br> Tour Plans <br>Recently</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+            <p class="py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>          
+          </p>
+          <div class="tour-plan-btn">
+            <button class=" py-3 px-6 ">  Browse all Packages </button>
+          </div>
+        </div>
+         
+        </div>
+        <div class="right-content">
+        
+          <div id="myCarousel" class="owl-carousel mt-5">
+            <div class="owl-content mx-4">
+                <img class="d-inline"  src="images/island2.jpg" alt="First slide">
+            </div>
+            <div class="owl-content mx-4">
+              <img class="d-inline"  src="images/hat-man.jpg" alt="First slide">
+          </div>
+          <div class="owl-content mx-4">
+            <img class="d-inline"  src="images/hat-man.jpg" alt="First slide">
+        </div>
+        <div class="owl-content mx-4">
+          <img class="d-inline"  src="images/island2.jpg" alt="First slide">
+      </div>
+      <div class="owl-content mx-4">
+        <img class="d-inline"  src="images/hat-man.jpg" alt="First slide">
+    </div>
+    <div class="owl-content mx-4">
+      <img class="d-inline"  src="images/hat-man.jpg" alt="First slide">
+  </div>
+          
+
+          </div>
+          <div class="owl-custom-btn text-center">
+            <div class="owl-prev">
+              <button class="bg-white-500 text-black ml-6">
+                PREV
+              </button>
+              <div class="arrow-icon-left text-black" style="font-size: 45px;"><span>&#129056;</span></div>
+            </div>
+            <div class="owl-next">
+              <button class="bg-white-500 text-black">
+                NEXT
+              </button>
+              <div class="arrow-icon-right text-black" style="font-size: 45px;"><span>&#129058;</span></div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="benifits-section mt-20">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="main-title px-4 md:px-20 ">
+          <h1>Benifits Get <br> Our Customer</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>        
+      </div>
+   </div>
+   <div class="grid grid-cols-1 lg:grid-cols-3 md:mx-10 my-10">
+    <div class="car-rental-card px-4 md:px-5">
+      <div class="card-img">
+        <img src="images/car-rental.jpg" style="width: 100%;">
+      </div>
+      <div class="card-content px-7">
+        <h4 class="py-5">Within a short time</h4>
+        <h1>Luxerious Car
+          Rental Service Available</h1>
+          <p class="py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+      
+    </div>
+    <div class="car-rental-card px-4 md:px-5">
+      <div class="card-img">
+        <img src="images/private-party.jpg" style="width: 100%;">
+      </div>
+      <div class="card-content px-7">
+        <h4 class="py-5">Within a short time</h4>
+        <h1>Cruise Private Party
+          Booking Available</h1>
+          <p class="py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+      
+    </div>
+    <div class="car-rental-card px-4 md:px-5">
+      <div class="card-img">
+        <img src="images/food-lovers.jpg" style="width: 100%;">
+      </div>
+      <div class="card-content px-7">
+        <h4 class="py-5">Within a short time</h4>
+        <h1 >Tremendous Options
+          for Food Lovers</h1>
+          <p class="py-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+      
+    </div>
+   </div>
+   <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+  
+    $(document).ready(function() {
+      $("#myCarousel").owlCarousel({
+        // Owl Carousel options and settings
+        items: 1, // Number of items to display
+        loop: true, // Infinite loop
+        // autoplay: true, // Autoplay the carousel
+        // autoplayTimeout: 2000, // Autoplay interval in milliseconds
+        responsiveClass: true,
+        // dots:true,
+        responsive:{
+            0:{
+                items:1, // Number of items to display on small screens (less than 576px)
+                nav: false
+            },
+            576:{
+                items:1, // Number of items to display on medium screens (576px and above)
+                nav: false
+            },
+            767:{
+                items:1, // Number of items to display on large screens (992px and above)
+                nav: false
+            },
+            992:{
+                items:2, // Number of items to display on large screens (992px and above)
+                nav: false
+            },
+           
+      }
+      });
+    });
+  </script>  
+
+ <script>
+  $(document).ready(function() {
+    var owl = $('#myCarousel'); // Assuming you've used the id "myCarousel" for your carousel
+
+    owl.owlCarousel({
+      // Owl Carousel options and settings
+      // ...
+    });
+
+    $('.owl-next').click(function() {
+      owl.trigger('next.owl.carousel');
+    });
+
+    $('.owl-prev').click(function() {
+      owl.trigger('prev.owl.carousel');
+    });
+  });
+</script>
+
 </body>
 </html>
