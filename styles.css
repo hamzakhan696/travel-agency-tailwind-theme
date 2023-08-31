@@ -309,19 +309,20 @@ line-height: 110%;
   font-weight: 600;
 }
 .arrow-icon-left{
- margin-top: -5%;
+ margin-top: -3%;
+ margin-left: -8px;
 }
 .arrow-icon-right{
-  margin-top: -5%;
-  margin-left: 3%;
+  margin-top: -3%;
+  margin-left: 24px;
  }
  .owl-next{
-  margin-top: -5%;
+  margin-top:-3%;
  }
  
  /* benifits-section */
- .benifits-section{
- 
+ .benifits-section2,.benifits-section1{
+  background: #f9f9ff;
  }
  .card-content{
   border: 1px solid #eee;
@@ -355,4 +356,80 @@ line-height: 110%;
     margin-top: 5%;
   }
 }
+
+/* pakage search */
+ .right-form .form-title{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+ }
+ .right-form{
+    background-image: url('images/pac-search-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 70px 50px;
+ }
+ .right-form label,.right-form select{
+  color: #eee;
+ }
+ .right-form input,.right-form select{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ .right-form input::placeholder{
+  color: #fff;
+ }
+ .right-form input:focus::placeholder{
+  opacity: 0;
+ }
+ 
+ .form-btn button{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #007bff;
+ }
+ .form-btn button:hover i{
+  right: 14%;
+ }
+ @media screen and (max-width: 768px) {
+  .right-form {
+    margin-top: 5%;
+  }
+  
+}
+.email-input input{
+  margin-top: 4%;
+}
+.email-input input::placeholder{
+  padding-bottom: 10%;
+}
+
+.email-input .header-btn{
+  top: -74%;
+}
+
+/* executive amozon section */
+.cheif-executive-detail .owl-content p{
+  color: #777777;
+  font-size: 24px;
+    font-style: italic;
+    line-height: 30px;
+}
+.cheif-executive-detail .owl-content h4{
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #222222;
+}
+.cheif-executive-detail .owl-content h6{
+  font-size: 15px;
+  color: #777777;
+}
+.quote-icon i{
+  font-size: 44px;
+  color: #f8b600;
+}
+
+
 
