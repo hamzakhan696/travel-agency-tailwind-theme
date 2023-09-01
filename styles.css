@@ -136,9 +136,9 @@ h1,h2,h3,h4,h5,h6{
     }
     @media screen and (max-width: 468px) {
       .sidebarMenu{
-        height: 50%;
-        width: 280px;
-        transform: translateX(-280px);
+        height: 55%;
+        width: 270px;
+        transform: translateX(-270px);
       }
     }
   
@@ -321,9 +321,9 @@ line-height: 110%;
  }
  
  /* benifits-section */
- .benifits-section2,.benifits-section1{
-  background: #f9f9ff;
- }
+ .split-background {
+  background: linear-gradient(to bottom, #f9f9ff 45%, #fff 55%);
+}
  .card-content{
   border: 1px solid #eee;
  }
@@ -398,13 +398,19 @@ line-height: 110%;
   }
   
 }
+/* newsletter */
 .email-input input{
   margin-top: 4%;
 }
 .email-input input::placeholder{
   padding-bottom: 10%;
 }
-
+.main-title input{
+  border-bottom: 1px solid #eee
+}
+.main-title input:focus::placeholder{
+  opacity: 0;
+ }
 .email-input .header-btn{
   top: -74%;
 }
@@ -430,6 +436,123 @@ line-height: 110%;
   font-size: 44px;
   color: #f8b600;
 }
+.card-icons i,.card-icons h6{
+    color: #777777;
+    padding-right: 12px;
+}
+.card-icons i{
+  font-size: 14px;
+}
 
+/* 
+footer */
+footer{
+  min-height: 100%;
+  background: #1e1c27;
+}
+.footer-titles h6{
+  color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-text p{
+  line-height: 27px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #777777;
+}
+.footer-list ul li{
+  line-height: 27px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #777777;
+}
+.footer-email input{
+  border: 1px solid #333333;
+    font-weight: 300;
+    color: #ffffff;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 14px;
+}
+.send-icon{
+  background-color: #f8b600;
+  padding: 7px 12px;
+}
+.send-icon i{
+  color: #eeeeee;
+}
+.footer-email input:focus::placeholder{
+  opacity: 0;
+ }
+
+.social-icons i{
+color: #cccccc;
+}
+.copyright-content p{
+color: #777777;
+line-height: 27px;
+font-size: 14px;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+}
+.custom-hr {
+  border-bottom: 1px solid #333333;
+  
+  /* Additional styling properties can be added here */
+}
+@media screen and (max-width: 768px) {
+  .footer-content{
+    margin-bottom: 7%;
+  }
+  .social-icons{
+    padding-bottom: 5%;
+  }
+  
+  
+}
+@media screen and (min-width: 1116px) {
+  .send-icon {
+    right: 0% !important  ;
+    top: 0px;
+   }
+  }
+@media screen and (max-width: 1116px) {
+  .send-icon {
+    right: -32% !important  ;
+    top: 0px;
+   }
+  }
+@media screen and (max-width: 1020px) {
+  .send-icon {
+    right: 26% !important;
+   }
+  }
+  @media screen and (max-width: 639px) {
+    .send-icon {
+      right: 58% !important;
+      width: auto;
+     }
+    }
+     @media screen and (max-width: 520px) {
+      .send-icon {
+        right: 46% !important;
+        width: auto;
+       }
+
+    }
+    @media screen and (max-width: 445px) {
+      .send-icon {
+        right: 38% !important;
+       }
+      }
+      @media screen and (max-width: 380px) {
+        .send-icon {
+          right: 28% !important;
+         }
+        }
 
 
