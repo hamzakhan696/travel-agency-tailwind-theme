@@ -156,7 +156,21 @@ h1,h2,h3,h4,h5,h6{
         width: 280px;
         transform: translateX(-280px);
       }
+      .get-started-btn button i{
+        right: 47% ;
+      }
+      .tour-plan-btn i{
+        right: 26% !important;
+      }
+      .form-btn button i{
+        right: 2% !important;
+        top: 44%;
     }
+    .form-btn button:hover i{
+      right: -1% !important;
+     
+  }
+  }
   
    header p{
     font-size: 14px;
