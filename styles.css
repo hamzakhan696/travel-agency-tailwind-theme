@@ -153,8 +153,8 @@ h1,h2,h3,h4,h5,h6{
     @media screen and (max-width: 468px) {
       .sidebarMenu{
         height: 55%;
-        width: 270px;
-        transform: translateX(-270px);
+        width: 280px;
+        transform: translateX(-280px);
       }
     }
   
