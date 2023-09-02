@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6{
     cursor: pointer;
     padding-top: 3px;
     padding-left: 3px;
+    background-color: #fff;
   }
   .spinner{
     height: 2px;
@@ -59,10 +60,7 @@ h1,h2,h3,h4,h5,h6{
     transform: rotate(-135deg);
     margin-top: -18px
   }
-  #openSidebarMenu:checked ~ .sidebarIconToggle{
-    margin-left: 45%;
-    margin-top:-4px;
-  }
+ 
   .navbar-heading{
     font-size: 50px;
     font-weight: 600;
@@ -137,8 +135,18 @@ h1,h2,h3,h4,h5,h6{
      .header .header-btn button{
      color: #eeeeee;
     }
+    #openSidebarMenu:checked ~ .sidebarIconToggle{
+      margin-left: 45%;
+      margin-top:-4px;
+    }
     
 
+  }
+  @media screen and (min-width: 768px) {
+    #openSidebarMenu:checked ~ .sidebarIconToggle{
+      margin-left: 35%;
+      margin-top:-4px;
+    }
   }
   @media screen and (max-width: 568px) {
     .header {
@@ -153,6 +161,9 @@ h1,h2,h3,h4,h5,h6{
       width: 320px;
       transform: translateX(-320px);
     }
+    .get-started-btn button{
+      color: #fff;
+    }
     }
     @media screen and (max-width: 468px) {
       .sidebarMenu{
@@ -161,7 +172,7 @@ h1,h2,h3,h4,h5,h6{
         transform: translateX(-280px);
       }
       .get-started-btn button i{
-        right: 47% ;
+        right: 44% ;
       }
       .tour-plan-btn i{
         right: 26% !important;
