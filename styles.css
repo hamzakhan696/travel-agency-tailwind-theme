@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6{
     top: 35%;
     width: 46px; /* Set the width of your arrow image */
     height: 16px; /* Set the height of your arrow image */
-    color: #000; /* Set the background color to black */
+    color: #fff; /* Set the background color to black */
     background-image: url('images/arrow.jpg'); /* Replace 'arrow.png' with the path to your arrow image */
     background-size: contain; /* Adjust the background size as needed */
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{
     top: 11%;
     width: 46px; /* Set the width of your arrow image */
     height: 16px; /* Set the height of your arrow image */
-    color: #000; /* Set the background color to black */
+    color: #fff; /* Set the background color to black */
     background-image: url('images/arrow.jpg'); /* Replace 'arrow.png' with the path to your arrow image */
     background-size: contain; /* Adjust the background size as needed */
     background-repeat: no-repeat;
