@@ -72,7 +72,6 @@ h1,h2,h3,h4,h5,h6{
   }
   .header-btn{
     background: transparent;
-   
     position: relative;
   }
   .header-btn button{
@@ -82,15 +81,26 @@ h1,h2,h3,h4,h5,h6{
     color: #222222;
     border: 1px solid #f8b600;
   }
-  .header-btn i{
-    right: -18px;
+  .header-btn button::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    width: 46px; /* Set the width of your arrow image */
+    height: 16px; /* Set the height of your arrow image */
+    color: #000; /* Set the background color to black */
+    background-image: url('images/arrow.jpg'); /* Replace 'arrow.png' with the path to your arrow image */
+    background-size: contain; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    margin-left: 2px; /* Adjust this value for spacing */
+  }
+  .header-btn button:hover::after{
+    margin-left: 12px;
   }
   .header-btn button:hover{
     background-color: #f8b600;
   }
-  .header-btn:hover.header-btn i{
-    right: -26px;
-  }
+
 /* 
   header */
    .header .main-heading{
@@ -105,12 +115,38 @@ h1,h2,h3,h4,h5,h6{
     color: #222222;
     border: 1px solid #f8b600;
   }
-  .get-started-btn button i{
+  /* .get-started-btn button i{
     left: 27%;
   }
   .get-started-btn:hover  i{
     left: 29%;
-  }
+  } */
+
+  .get-started-btn button::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 11%;
+    width: 46px; /* Set the width of your arrow image */
+    height: 16px; /* Set the height of your arrow image */
+    color: #000; /* Set the background color to black */
+    background-image: url('images/arrow.jpg'); /* Replace 'arrow.png' with the path to your arrow image */
+    background-size: contain; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    margin-left: 5px; /* Adjust this value for spacing */
+}
+.get-started-btn button:hover::after{
+  margin-left: 12px;
+}
+@media screen and (min-width: 768px) {
+  .get-started-btn button::after {
+    top: 35%;
+}
+
+
+}
+
+
   .get-started-btn:hover button{
     background-color: #f8b600;
   }
@@ -334,12 +370,7 @@ line-height: 110%;
   color: #222222;
  
 }
-.tour-plan-btn i{
-  left: 47%;
-}
-.tour-plan-btn:hover i{
-  left: 49%;
-}
+
 .tour-plan-btn button{
   border: 1px solid #f8b600;
   background-color: transparent;
@@ -348,6 +379,22 @@ line-height: 110%;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
+}
+.tour-plan-btn button::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 36%;
+  width: 46px; /* Set the width of your arrow image */
+  height: 16px; /* Set the height of your arrow image */
+  color: #000; /* Set the background color to black */
+  background-image: url('images/arrow.jpg'); /* Replace 'arrow.png' with the path to your arrow image */
+  background-size: contain; /* Adjust the background size as needed */
+  background-repeat: no-repeat;
+  margin-left: 5px; /* Adjust this value for spacing */
+}
+.tour-plan-btn button:hover::after{
+ margin-left: 12px;
 }
 .tour-plan-btn button:hover{
  background-color: #f8b600;
@@ -412,7 +459,8 @@ line-height: 110%;
  .right-form .form-title{
   font-size: 24px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #fff ;
+  z-index: 999;
  }
  .right-form{
     background-image: url('images/pac-search-bg.jpg');
@@ -423,6 +471,16 @@ line-height: 110%;
  .right-form label{
   color: #eee;
  }
+ .overlay{
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 5%;
+  opacity: 0.5;
+  position: absolute;
+  background-color: #1e1c27;
+ }
+ 
  
  .right-form select option{
   color: #777777;
@@ -449,6 +507,23 @@ line-height: 110%;
   color: #fff;
   border: 1px solid #007bff;
  }
+ .form-btn button::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  width: 46px; /* Set the width of your arrow image */
+  height: 16px; /* Set the height of your arrow image */
+  color: #000; /* Set the background color to black */
+  background-image: url('images/arrow.jpg'); /* Replace 'arrow.png' with the path to your arrow image */
+  background-size: contain; /* Adjust the background size as needed */
+  background-repeat: no-repeat;
+  margin-left: 5px; /* Adjust this value for spacing */
+ }
+ .form-btn button:hover::after{
+  margin-left: 12px;
+}
+
  .form-btn button:hover i{
   right: 14%;
  }
@@ -456,6 +531,15 @@ line-height: 110%;
   .right-form {
     margin-top: 5%;
   }
+  .overlay{
+    width: 92%;
+    height: 96%;
+    top: 3%;
+    left: 4%;
+    opacity: 0.5;
+    position: absolute;
+    background-color: #1e1c27;
+   }
   /* .form-btn button{
     font-size: 10px;
     letter-spacing: 1px;
