@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6{
     background: transparent;
     position: relative;
   }
-  .header-btn button{
+  .header-btn button,.subscribe-btn button{
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -573,7 +573,7 @@ line-height: 110%;
 .main-title input:focus::placeholder{
   opacity: 0;
  }
-.email-input .header-btn{
+.email-input .subscribe-btn{
   top: -74%;
 }
 
