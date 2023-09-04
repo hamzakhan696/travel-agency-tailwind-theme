@@ -491,15 +491,7 @@ line-height: 110%;
  .right-form label{
   color: #eee;
  }
- .overlay{
-  width: 80%;
-  height: 100%;
-  top: 0;
-  left: 5%;
-  opacity: 0.5;
-  position: absolute;
-  background-color: #1e1c27;
- }
+ 
  
  
  .right-form select option{
@@ -527,26 +519,8 @@ line-height: 110%;
   color: #fff;
   border: 1px solid #007bff;
  }
- .form-btn button::after{
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 55%;
-  width: 46px; /* Set the width of your arrow image */
-  height: 16px; /* Set the height of your arrow image */
-  color: #000; /* Set the background color to black */
-  background-image: url('images/arrow.jpg'); /* Replace 'arrow.png' with the path to your arrow image */
-  background-size: contain; /* Adjust the background size as needed */
-  background-repeat: no-repeat;
-  margin-left: 5px; /* Adjust this value for spacing */
- }
- .form-btn button:hover::after{
-  margin-left: 12px;
-}
+ 
 
- .form-btn button:hover i{
-  right: 14%;
- }
  @media screen and (max-width: 768px) {
   .right-form {
     margin-top: 5%;
