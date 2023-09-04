@@ -428,10 +428,13 @@ line-height: 110%;
   width: 90%;
   height: auto;
 }
-@media screen and (max-width: 468x) {
+@media screen and (max-width: 468px) {
   .overlay-owl{
     width: 92% !important;
     height: 100%;
+  }
+  .overlay-content{
+    padding-top: 55% !important;
   }
 }
 .overlay-content p{
