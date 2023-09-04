@@ -215,6 +215,11 @@ h1,h2,h3,h4,h5,h6{
         width: 280px;
         transform: translateX(-280px);
       }
+      #openSidebarMenu:checked ~ .sidebarIconToggle{
+        margin-left: 52%;
+        margin-top:-4px;
+        transition: all 0.5s ease-in-out
+      }
       .get-started-btn button i{
         right: 44% ;
       }
