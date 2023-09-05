@@ -97,9 +97,14 @@ h1,h2,h3,h4,h5,h6{
   }
   .header-btn button:hover::after{
     margin-left: 12px;
+    transition: all 0.3s ease 0s;
   }
   .header-btn button:hover{
     background-color: #f8b600;
+    transition: all 0.3s ease 0s;
+ -webkit-transition: all 0.3s ease 0s;
+   -moz-transition: all 0.3s ease 0s;
+   -o-transition: all 0.3s ease 0s;
   }
 
 /* 
@@ -138,6 +143,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .get-started-btn button:hover::after{
   margin-left: 12px;
+  transition: all 0.3s ease 0s;
 }
 @media screen and (min-width: 768px) {
   .get-started-btn button::after {
@@ -155,6 +161,10 @@ h1,h2,h3,h4,h5,h6{
 
   .get-started-btn:hover button{
     background-color: #f8b600;
+    transition: all 0.3s ease 0s;
+ -webkit-transition: all 0.3s ease 0s;
+   -moz-transition: all 0.3s ease 0s;
+   -o-transition: all 0.3s ease 0s;
   }
 
    @media screen and (max-width: 768px) {
@@ -378,6 +388,10 @@ line-height: 110%;
 }
 .box-1:hover,.box-2:hover,.box-3:hover,.box-4:hover{
   background-color: #007bff;
+  transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
 }
 
 /* .tour-plan-section */
@@ -414,19 +428,34 @@ line-height: 110%;
 }
 .tour-plan-btn button:hover::after{
  margin-left: 12px;
+ transition: all 0.3s ease 0s;
 }
 .tour-plan-btn button:hover{
  background-color: #f8b600;
+ transition: all 0.3s ease 0s;
+ -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
 }
 .owl-content:hover .overlay-owl{
- display: block;
+  opacity: .85;
+  visibility: visible;
+  
 }
 .overlay-owl{
- 
-  background-color: #000;
-  opacity: 0.8;
+  position: absolute;
+  left: px;
+  top: 0;
+  height: 100%;
   width: 90%;
-  height: auto;
+  content: "";
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 @media screen and (max-width: 468px) {
   .overlay-owl{
@@ -574,19 +603,7 @@ line-height: 110%;
   .right-form {
     margin-top: 5%;
   }
-  .overlay{
-    width: 92%;
-    height: 96%;
-    top: 3%;
-    left: 4%;
-    opacity: 0.5;
-    position: absolute;
-    background-color: #1e1c27;
-   }
-  /* .form-btn button{
-    font-size: 10px;
-    letter-spacing: 1px;
-  } */
+
   
 }
 /* newsletter */
